@@ -1,0 +1,45 @@
+:root {
+  --main_container_width: 768px;
+  --main_container_padding: 30px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #fff;
+  font-style: normal;
+  font-family: "General Sans", sans-serif;
+  line-height: normal;
+}
+
+.main_container {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main_title {
+  margin: 20px 0;
+  font-size: 27px;
+  color: #f5ed63;
+  text-align: center;
+  font-weight: 600;
+}
+
+.flex_column_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}

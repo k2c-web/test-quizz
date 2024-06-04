@@ -1,0 +1,80 @@
+.card_root ul {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  max-width: 768px;
+  margin: 20px auto 0;
+}
+
+.card_root li {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.response_box {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.response_box .response_text {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+li.selected {
+  background-color: white;
+  color: black;
+}
+
+.fake_radio_container {
+  width: 10%;
+}
+
+.fake_radio {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #cac4d0;
+  border-radius: 50%;
+}
+
+li.selected .fake_radio {
+  border: 1px solid black;
+}
+
+li .fake_radio::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.15s;
+}
+
+li.selected .fake_radio::after {
+  background-color: #1c1c1c;
+}
+
+.card_root .letter {
+  flex-shrink: 0;
+  margin-right: 8px;
+}

@@ -1,0 +1,30 @@
+.main_cta {
+  position: relative;
+  height: 80px;
+  width: 160px;
+  border-top-left-radius: 160px;
+  border-top-right-radius: 160px;
+  background-color: #f5ed63;
+  border: 1px solid transparent;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main_cta .main_cta_label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main_cta:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  color: #666;
+}

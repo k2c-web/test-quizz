@@ -1,0 +1,15 @@
+#root {
+  height: 100%;
+}
+
+.logo_container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_container.with_border_bottom {
+  border-bottom: 1px solid #393939;
+}

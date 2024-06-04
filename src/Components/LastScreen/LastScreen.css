@@ -1,0 +1,83 @@
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.last_screen_section {
+  height: calc(100% - 81px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("./../../assets/Illustrations/Illustration-Fin.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  animation: fadeInAnimation ease 0.3s;
+}
+
+.last_screen_section .main_title {
+  margin: 20px 0 0 0;
+}
+
+.last_screen_section .count {
+  margin-right: 8px;
+}
+
+.last_screen_section small {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+  transform: translateX(-1200px);
+}
+
+.last_screen_section .infobox_root {
+  margin-top: 20px;
+}
+
+.last_screen_section .infobox_root + .infobox_root {
+  margin-top: 16px;
+}
+
+.contact_tab_root {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--main_container_width);
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact_tab_root .contact_tab:first-of-type {
+  margin-right: 1px;
+}
+
+.contact_tab {
+  height: 100%;
+  background: #f5ed63;
+  color: black;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact_tab.discover a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

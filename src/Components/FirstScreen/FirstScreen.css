@@ -1,0 +1,22 @@
+.intro_section {
+  height: calc(100% - 81px);
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-image: url("./../../assets/Illustrations/Illustration-Home.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.intro_section .current_score {
+  color: #fcb912;
+}
+
+.intro_infos {
+  display: flex;
+  justify-content: center;
+}
+
+.intro_infos .infobox_root:first-of-type {
+  margin-right: 24px;
+}
